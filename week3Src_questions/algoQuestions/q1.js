@@ -5,7 +5,7 @@
 /**
  * output = ['p']
  */
-let str = "apple"; 
+// let str = "apple"; 
 
 /**
  * output = ['r', 'e', 't']
