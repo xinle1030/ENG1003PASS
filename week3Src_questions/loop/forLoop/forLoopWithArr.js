@@ -16,7 +16,7 @@ for (let i = 0; i < array.length; i++){
 
 console.log();
 
-// forEach
+// forEach - can only be used on an array
 
 array.forEach(element => {
     console.log(element)
