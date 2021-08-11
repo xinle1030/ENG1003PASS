@@ -28,4 +28,4 @@ while (flag){
     }
 }
 
-document.write("Congratz!!! You got my secret code!");\
+document.write("Congratz!!! You got my secret code!");
