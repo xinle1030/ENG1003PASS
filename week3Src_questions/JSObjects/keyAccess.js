@@ -23,7 +23,7 @@ console.log();
     Limitations of .notation
 */
 console.log(myObj.name);
-console.log(myObj.cla2345678ss);
+console.log(myObj.class);
 // console.log(myObj.123);          // .notation does not allow number
 console.log(myObj.first_name);
 // console.log(myObj.nick-name);    // .notation does not some special characters
