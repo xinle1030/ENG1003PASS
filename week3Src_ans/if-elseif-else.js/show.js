@@ -10,14 +10,7 @@ if (!mood){
 
 console.log();
 
-let today = "";
-if (mood == true){
-    today = "holiday"
-}
-else{
-    today = "working day";
-}
-
 // ternary operator
-today = mood ? "holiday" : "working day";
+
+let today = mood ? "holiday" : "working day";
 console.log(today);

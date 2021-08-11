@@ -1,7 +1,10 @@
 my_obj = {
-    name: "someone",
-    age: 3
+    age: 3,
+    name: "someone"
 }
+
+// console.log(my_obj["age"]);
+console.log(my_obj.age);
 
 for (let key in my_obj){
     console.log(my_obj[key]);

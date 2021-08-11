@@ -11,7 +11,7 @@ let end = 100;
 let message = "";
 let input_value;
 
-while (flag){
+do{
     console.log(start, end);
     message = `Guess a number between ${start} - ${end}`;
     input_value = Number(prompt(message));
@@ -27,5 +27,6 @@ while (flag){
         console.log("less than");
     }
 }
+while(flag);
 
-document.write("Congratz!!! You got my secret code!");\
+document.write("Congratz!!! You got my secret code!");

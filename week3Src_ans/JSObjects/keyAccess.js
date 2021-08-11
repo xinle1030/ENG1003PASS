@@ -23,32 +23,26 @@ console.log();
     Limitations of .notation
 */
 console.log(myObj.name);
-console.log(myObj.cla2345678ss);
+console.log(myObj.class);
 // console.log(myObj.123);          // .notation does not allow number
 console.log(myObj.first_name);
 // console.log(myObj.nick-name);    // .notation does not some special characters
 // console.log(myObj."nick-name");
 // console.log(myObj.friends[]);    // .notation does not some special characters
 // console.log(myObj."friends[]");
-// console.log(myObj.age+);         // .notation does not some special characters
+// console.log(myObj.age+);    // .notation does not some special characters
 // console.log(myObj."age+");
 console.log(myObj.$savings);        // .notation allows $sign 
 
 console.log();
 
-let my_var = "name";
-let var2 = "class";
-
-console.log(myObj[my_var]);
-console.log(myObj[var2]);
-// console.log(myObj["123"]); 
-// console.log(myObj["nick-name"]);
-// console.log(myObj["age+"]);
-// console.log(myObj["$savings"]);
-
-let my_arr = myObj["friends[]"];
-console.log(my_arr[0]);
-// my_arr[1];
-
-// console.log(myObj["friends[]"][0]);
-// console.log(myObj["friends[]"][1]);
+/*
+    Limitations of .notation
+*/
+console.log(myObj["name"]);
+console.log(myObj["class"]);
+console.log(myObj["123"]); 
+console.log(myObj["nick-name"]);
+console.log(myObj["friends[]"]);
+console.log(myObj["age+"]);
+console.log(myObj["$savings"]);

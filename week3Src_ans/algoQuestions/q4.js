@@ -10,13 +10,17 @@ function isPrime(num){
         return true;
     }
     else{
-        for (let i = 2; i < num - 1; i++){
-            if (num % i == 0){
+        sqrt_result = Math.sqrt(num);
+        for(var i = 2; i <= sqrt_result; i++){
+            if(num % i === 0){
                 return false;
-            }
         }
-        return true
     }
+    return true;
+}
 }
 
-console.log(isPrime(12))
+console.log(isPrime(1))
+console.log(isPrime(2))
+console.log(isPrime(4))
+console.log(isPrime(997))

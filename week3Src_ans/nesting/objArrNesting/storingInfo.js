@@ -30,4 +30,3 @@ let obj_job = obj_person_info.job;
 let obj_salary = obj_person_info.salary;
 
 console.log();
-
