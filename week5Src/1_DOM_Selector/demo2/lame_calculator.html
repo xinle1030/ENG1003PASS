@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lame Calculator</title>
+        <style>
+            .sub-titles{
+                font-size: 25px;
+            }
+            #resultArea{
+                font-size: 20px;
+            }
+        </style>
+
+        <h1>Lame Calculators</h1>
+
+        <br>
+
+        <p class = "sub-titles">Choose the operands and operators: </p>
+        <div>
+            <tr>
+                <select id="value1">
+                    <option value="" disabled selected hidden>Choose a value</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <select id="operator">
+                    <option value="" disabled selected hidden>Choose an operator</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="x">x</option>
+                    <option value="/">/</option>
+                </select>
+
+                <select id="value2">
+                    <option value="" disabled selected hidden>Choose a value</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </tr>
+        </div>
+
+        <br>
+
+        <p class = "sub-titles">Choose the number of decimal places to round to: </p>
+        <div>
+            <input type="radio" name="decimalPoint" value="1" id= "1dp">
+            <label>1dp</label><br>
+            <input type="radio" name="decimalPoint" value="2" id= "2dp">
+            <label>2dp</label><br>
+            <input type="radio" name="decimalPoint" value="3" id= "3dp">
+            <label>3dp</label>
+        </div>
+
+        <br>
+
+        <div>
+            <button onclick="calculate()">Submit</button>
+        </div>
+
+        <div id = "resultArea"></div>
+
+        <script src= "lame_calculator.js"></script>
+
+    </body>
+</html>
