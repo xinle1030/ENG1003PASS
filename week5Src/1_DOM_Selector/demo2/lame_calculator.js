@@ -30,15 +30,16 @@ function calculate() {
   }
 
   // retrieve radio input
-  let dpRef = document.querySelector('input[name="decimalPoint"]:checked');
+  let dpRef = document.querySelector("input[name='decimalPoint']:checked")
   let dp = 0;
-  if (dpRef != null) {
-    dp = Number(dpRef.value);
+  if (dpRef != null){
+    dp = Number(dpRef.value)
   }
 
   // resultAreadRef contains the reference to the HTML element resultArea
   let resultAreaRef = document.getElementById("resultArea");
 
   // write the output as HTML element to the div section with id resultArea
-  resultAreaRef.innerHTML = returnVal.toFixed(dp);
+  resultAreaRef.innerText = returnVal.toFixed(dp);
+
 }

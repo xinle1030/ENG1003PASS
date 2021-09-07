@@ -4,10 +4,8 @@ let body2 = document.querySelector("body")
 let pageChangeColor = false;
 let flag;
 
-// elem.style.color = "green";
-// for (let index in elem){
-//     (elem[index]).style.color = "red";
-// }
+// body2.style.color = "green";
+// body1.style.color = "green";
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -18,23 +16,20 @@ function getRandomColor() {
     return color;
   }
 
-function btnFunc(){
-    console.log("run")
-    console.log(pageChangeColor)
-    if (!pageChangeColor){
-        flag = setInterval(
-            function(){
-                body2.style.backgroundColor = getRandomColor();
-                pageChangeColor = true
-            },
-            500
-        );
-    }
-    else{
-        clearInterval(flag);
-        pageChangeColor = false
-    }
+function btnFunction(){
+  if (pageChangeColor != true){
+    flag = setInterval(
+      function(){
+        body2.style.backgroundColor = getRandomColor();
+      }, 500
+    )
+    pageChangeColor = true
+  }
+  else{
+    clearInterval(flag)
+    pageChangeColor = false
+  }
 }
 
-let my_btn = document.getElementById("my_btn");
-my_btn.addEventListener("change", btnFunc)
+let btn = document.getElementById("my_btn")
+btn.addEventListener("click", btnFunction)

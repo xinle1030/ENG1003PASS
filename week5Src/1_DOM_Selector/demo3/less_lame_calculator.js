@@ -3,8 +3,6 @@
 let select1 = document.getElementById("value1"); 
 let select2 = document.getElementById("value2"); 
 
-
-
 // for(let i = 0; i <= 100; i++){
 //     select1.innerHTML += `<option value="${i}">${i}</option>`
 //     select2.innerHTML += `<option value="${i}">${i}</option>`
@@ -58,4 +56,8 @@ function calculate() {
 
   // write the output as HTML element to the div section with id resultArea
   resultAreaRef.innerHTML = returnVal.toFixed(dp);
+}
+
+function lame(){
+  resultAreaRef.innerText = "Hello"
 }
