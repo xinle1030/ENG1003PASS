@@ -83,56 +83,54 @@
 
 function checkForLocalStorage(key) {
     let data = localStorage.getItem(key);
-    if (data) {
-        if (data !== null && data !== "undefined" && data !== "") {
-            return true;
-        }
+    if (data !== null && data !== undefined && data !== ""){
+        return true
     }
-    else {
-        return false;
+    else{
+        return false
     }
 }
  
  function updateLocalStorage(key, data) {
-    let dataString = JSON.stringify(data);
-    localStorage.setItem(key, dataString);
+     let dataString = JSON.stringify(data)
+     localStorage.setItem(key, dataString)
 }
 
  function getDataLocalStorage(key) {
-    let retrievedData = localStorage.getItem(key);
-    let dataObject;
-    try {
-        dataObject = JSON.parse(retrievedData);
-    }
-    catch (e) {
-        console.log(e);
-    }
-    finally {
-        return dataObject;
-    }
+     let retrievedData = localStorage.getItem(key)
+     let dataObject;
+     try{
+         dataObject = JSON.parse(retrievedData)
+     }
+     catch(e){
+         console.log(e)
+     }
+     finally{
+         return dataObject;
+     }
 }
  
- let userList = new UserList();
+let userList = new UserList();
 
  
 if (typeof Storage !== "undefined")
 {
     console.log("localStorage is available.");
-    if (checkForLocalStorage(USERLIST_DATA_KEY)) {
-        let data = getDataLocalStorage(USERLIST_DATA_KEY);
-        userList.fromData(data);
+    if (checkForLocalStorage(USERLIST_DATA_KEY)){
+        let data = getDataLocalStorage(USERLIST_DATA_KEY)
+        userList.fromData(data)
     }
-    else {
-        let newId = "001";
-        userList.addUser(newId, "anonymous user", "");
-        console.log(userList.users)
-        updateLocalStorage(USERLIST_DATA_KEY, userList);
+    else{
+        let newId = "001"
+        userList.addUser(userId, "anonymous user", "")
+        updateLocalStorage(USERLIST_DATA_KEY, userList)
     }
-    
-    if (!checkForLocalStorage(USER_INDEX_KEY)) {
+
+    if (!checkForLocalStorage(USER_INDEX_KEY)){
         let index = 0;
-        updateLocalStorage(USER_INDEX_KEY, index);
+        updateLocalStorage(USER_INDEX_KEY, index)
     }
+
 }
 else
 {

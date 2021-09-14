@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Gallery2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">My Gallery2</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <span class="material-icons">
+                    local_florist
+                    </span>
+                <div id="display"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">My Gallery2</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#" onclick="tryClickMe()">Try Click Me</a>
+                <a class="mdl-navigation__link" href="grid.html">Picture 1</a>
+                <a class="mdl-navigation__link" href="anotherpage.html" >Picture 2</a>
+                <a class="mdl-navigation__link" href="#">Link 4</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <div>
+
+                    <!--Page Heading-->
+                    <h3 class="titleText"><b>Picture2</b></h3>
+
+                    <div class="mdl-grid">
+
+                        <!--Map & Contacts-->
+                        <div class="mdl-cell mdl-cell--7-col">
+                            <img id="my-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2FYCFMNayNi7bxZ5IlAxj_bcxzIkXW_MGk-4vl1uA_rbQ7mNNhQPeBY2qO6xcCWn1cY&usqp=CAU">
+                        </div>
+
+                        <!--Brief Info with Icons-->
+                        <div class="mdl-cell mdl-cell--5-col contents">
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a magna vitae orci
+                                ornare cursus. Mauris facilisis auctor consequat. Quisque ut efficitur ex. Nunc laoreet
+                                sollicitudin lectus eu eleifend. Pellentesque non leo ultrices, viverra justo ac,
+                                blandit ipsum. Duis tempor malesuada nisl sit amet vestibulum. Fusce at neque ante.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Ut convallis at nunc eu lobortis. Suspendisse et rutrum nisl. Fusce accumsan
+                                dolor non odio egestas interdum.
+
+                                Donec nisi velit, venenatis vel lacus quis, lacinia gravida nulla. In consectetur nisl a
+                                erat posuere, et ornare ex cursus. Nam vel vestibulum magna. Maecenas rutrum fermentum
+                                leo, sit amet viverra libero cursus non. Etiam interdum enim nec purus ornare, eget
+                                varius diam posuere. Fusce eu suscipit mi. Curabitur posuere metus ut erat cursus, id
+                                finibus urna sodales.
+
+                                Ut libero tellus, varius quis vulputate ut, luctus vel lorem. Donec fermentum, nunc sit
+                                amet euismod tristique, neque metus malesuada massa, ac pretium dui sem sed dui.
+                                Praesent et lectus dui. Pellentesque eget venenatis nulla. Nullam rhoncus, lacus at
+                                volutpat porttitor, erat lacus posuere est, ut efficitur dui velit a ante. Mauris dolor
+                                augue, aliquet in turpis eu, suscipit posuere metus. Phasellus tristique sapien dolor,
+                                sit amet interdum elit finibus vel. Integer commodo a risus in iaculis. Mauris eget nunc
+                                vel lacus iaculis tempus. Sed imperdiet blandit lectus, sed viverra mauris tincidunt sit
+                                amet. Morbi et gravida lacus. Suspendisse sodales pellentesque lectus, lacinia fringilla
+                                dolor accumsan vitae. Etiam in erat vel justo iaculis molestie. Duis ultricies, tortor
+                                in ultricies ullamcorper, quam quam rutrum ex, nec volutpat massa justo a ipsum.
+
+                                Donec vulputate sapien quis facilisis porta. Phasellus egestas finibus ligula in
+                                fermentum. Donec facilisis nulla a dui blandit dignissim. Morbi malesuada tortor vitae
+                                malesuada ultricies. Duis pellentesque diam ut enim sollicitudin sodales a non est.
+                                Vivamus sollicitudin augue facilisis malesuada placerat. Vestibulum a accumsan nisl.
+                                Cras eleifend risus ut tellus gravida congue. Cras fermentum semper lorem eget rutrum.
+                                Cras vel turpis ultricies, suscipit odio quis, interdum ipsum. Sed sed dui ut felis
+                                iaculis lacinia. Sed viverra eros id imperdiet ullamcorper. Maecenas accumsan tempus
+                                turpis, a auctor arcu pellentesque non. Mauris justo ligula, tristique a diam ac,
+                                imperdiet convallis leo. Nullam vulputate dapibus ipsum eget vulputate.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

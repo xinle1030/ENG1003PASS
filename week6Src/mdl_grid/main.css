@@ -1,0 +1,9 @@
+#my-image{
+    width: 100%;
+    outline-style: solid;
+    float: left;
+}
+
+.titleText{
+    padding-left: 1rem;
+}

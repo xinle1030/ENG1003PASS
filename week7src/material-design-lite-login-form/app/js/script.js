@@ -45,10 +45,9 @@ function setUpInterface(){
 
     // Username
     let userIndex = localStorage.getItem(USER_INDEX_KEY);
-    let username = userList.getUser(userIndex).username;
+    let username = userList.getUser(userIndex).username
     welcomeText.innerHTML = `<strong>${username}</strong>`
 
     // PickUpLine
     pickUpLine.innerText = `${pickUpLines[pickUpLine_randomNumber]}`
 }
-
