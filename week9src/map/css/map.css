@@ -1,0 +1,25 @@
+/* Write some CSS here */
+#map {
+  width: 100%;
+  height: 80vh;
+  outline-style: solid;
+}
+
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 100%;
+  background: #52c234;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.mdl-layout__header-row {
+  color: white;
+}
